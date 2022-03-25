@@ -1,0 +1,110 @@
+2022-03-25 12:00:06.573 | DEBUG    | __main__:on_press:9 - 'a' :pushed
+2022-03-25 12:00:08.019 | DEBUG    | __main__:on_press:9 - 'b' :pushed
+2022-03-25 12:00:09.414 | DEBUG    | __main__:on_press:9 - 'c' :pushed
+2022-03-25 12:00:11.012 | DEBUG    | __main__:on_press:9 - 'd' :pushed
+2022-03-25 12:00:15.047 | DEBUG    | __main__:on_press:9 - 'e' :pushed
+2022-03-25 12:00:15.498 | DEBUG    | __main__:on_press:9 - 'f' :pushed
+2022-03-25 12:00:16.449 | DEBUG    | __main__:on_press:9 - 'g' :pushed
+2022-03-25 12:00:25.786 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:00:53.409 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:00:54.177 | DEBUG    | __main__:on_press:9 - 'v' :pushed
+2022-03-25 12:00:57.987 | DEBUG    | __main__:on_press:9 - 'a' :pushed
+2022-03-25 12:00:58.968 | DEBUG    | __main__:on_press:9 - 'e' :pushed
+2022-03-25 12:00:59.973 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:01:00.637 | DEBUG    | __main__:on_press:9 - 'v' :pushed
+2022-03-25 12:01:31.271 | DEBUG    | __main__:on_press:9 - 'a' :pushed
+2022-03-25 12:01:32.365 | DEBUG    | __main__:on_press:9 - 'b' :pushed
+2022-03-25 12:01:33.268 | DEBUG    | __main__:on_press:9 - 'c' :pushed
+2022-03-25 12:01:34.681 | DEBUG    | __main__:on_press:9 - 'f' :pushed
+2022-03-25 12:01:34.880 | DEBUG    | __main__:on_press:9 - 'f' :pushed
+2022-03-25 12:01:36.868 | DEBUG    | __main__:on_press:9 - 'e' :pushed
+2022-03-25 12:01:38.014 | DEBUG    | __main__:on_press:9 - 'f' :pushed
+2022-03-25 12:01:38.737 | DEBUG    | __main__:on_press:9 - 'a' :pushed
+2022-03-25 12:01:40.385 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:01:40.837 | DEBUG    | __main__:on_press:9 - 'v' :pushed
+2022-03-25 12:02:01.015 | DEBUG    | __main__:on_press:9 - '=' :pushed
+2022-03-25 12:02:02.269 | DEBUG    | __main__:on_press:9 - 'o' :pushed
+2022-03-25 12:02:02.540 | DEBUG    | __main__:on_press:9 - 'n' :pushed
+2022-03-25 12:02:04.582 | DEBUG    | __main__:on_press:9 - Key.enter :pushed
+2022-03-25 12:02:06.348 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:02:06.680 | DEBUG    | __main__:on_press:9 - 's' :pushed
+2022-03-25 12:02:12.863 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:02:13.321 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:02:14.862 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:02:15.354 | DEBUG    | __main__:on_press:9 - 's' :pushed
+2022-03-25 12:03:06.245 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:03:11.879 | DEBUG    | __main__:on_press:9 - Key.enter :pushed
+2022-03-25 12:03:14.721 | DEBUG    | __main__:on_press:9 - 'p' :pushed
+2022-03-25 12:03:14.891 | DEBUG    | __main__:on_press:9 - 'r' :pushed
+2022-03-25 12:03:15.731 | DEBUG    | __main__:on_press:9 - Key.enter :pushed
+2022-03-25 12:03:16.568 | DEBUG    | __main__:on_press:9 - "'" :pushed
+2022-03-25 12:03:17.941 | DEBUG    | __main__:on_press:9 - 'o' :pushed
+2022-03-25 12:03:18.179 | DEBUG    | __main__:on_press:9 - 'n' :pushed
+2022-03-25 12:03:19.110 | DEBUG    | __main__:on_press:9 - Key.shift :pushed
+2022-03-25 12:03:19.703 | DEBUG    | __main__:on_press:9 - '_' :pushed
+2022-03-25 12:03:20.414 | DEBUG    | __main__:on_press:9 - 'c' :pushed
+2022-03-25 12:03:20.655 | DEBUG    | __main__:on_press:9 - 'l' :pushed
+2022-03-25 12:03:20.910 | DEBUG    | __main__:on_press:9 - 'i' :pushed
+2022-03-25 12:03:21.005 | DEBUG    | __main__:on_press:9 - 'c' :pushed
+2022-03-25 12:03:21.352 | DEBUG    | __main__:on_press:9 - 'k' :pushed
+2022-03-25 12:03:22.614 | DEBUG    | __main__:on_press:9 - Key.space :pushed
+2022-03-25 12:03:25.853 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:03:29.891 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:03:30.287 | DEBUG    | __main__:on_press:9 - 's' :pushed
+2022-03-25 12:08:15.570 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:08:15.621 | DEBUG    | __main__:on_press:9 - Key.shift :pushed
+2022-03-25 12:08:15.881 | DEBUG    | __main__:on_press:9 - Key.left :pushed
+2022-03-25 12:08:21.585 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:08:24.756 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:08:28.210 | DEBUG    | __main__:on_press:9 - '[' :pushed
+2022-03-25 12:08:31.034 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:08:38.973 | DEBUG    | __main__:on_press:9 - Key.shift_r :pushed
+2022-03-25 12:08:39.261 | DEBUG    | __main__:on_press:9 - '#' :pushed
+2022-03-25 12:08:40.123 | DEBUG    | __main__:on_press:9 - Key.space :pushed
+2022-03-25 12:08:59.000 | DEBUG    | __main__:on_press:9 - Key.shift_r :pushed
+2022-03-25 12:08:59.186 | DEBUG    | __main__:on_press:9 - '#' :pushed
+2022-03-25 12:09:01.358 | DEBUG    | __main__:on_press:9 - Key.space :pushed
+2022-03-25 12:09:05.011 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:09:05.511 | DEBUG    | __main__:on_press:9 - 's' :pushed
+2022-03-25 12:09:05.855 | DEBUG    | __main__:on_press:9 - 's' :pushed
+2022-03-25 12:09:06.099 | DEBUG    | __main__:on_press:9 - 's' :pushed
+2022-03-25 12:09:27.861 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:28.024 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:39.154 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:39.278 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:40.028 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:40.205 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:41.073 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:41.304 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:41.913 | DEBUG    | __main__:on_click:27 - right was pressed! 
+2022-03-25 12:09:42.157 | DEBUG    | __main__:on_click:27 - right was pressed! 
+2022-03-25 12:09:43.455 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:43.583 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:44.587 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:44.694 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:46.619 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:09:46.782 | DEBUG    | __main__:on_click:25 - left was pressed! 
+2022-03-25 12:11:00.208 | DEBUG    | __main__:on_press:9 - 'a' :pushed
+2022-03-25 12:11:01.973 | DEBUG    | __main__:on_press:9 - 'a' :pushed
+2022-03-25 12:11:02.756 | DEBUG    | __main__:on_press:9 - 'b' :pushed
+2022-03-25 12:11:05.684 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:11:05.764 | DEBUG    | __main__:on_press:9 - Key.shift :pushed
+2022-03-25 12:11:05.892 | DEBUG    | __main__:on_press:9 - Key.left :pushed
+2022-03-25 12:11:07.188 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:11:07.645 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:11:08.310 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:11:22.487 | DEBUG    | __main__:on_press:9 - Key.shift :pushed
+2022-03-25 12:11:22.495 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:11:22.991 | DEBUG    | __main__:on_press:9 - Key.left :pushed
+2022-03-25 12:11:23.435 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:11:23.719 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:11:24.378 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
+2022-03-25 12:11:25.289 | DEBUG    | __main__:on_press:9 - Key.cmd :pushed
+2022-03-25 12:11:25.702 | DEBUG    | __main__:on_press:9 - 's' :pushed
+2022-03-25 12:11:34.999 | DEBUG    | __main__:on_press:9 - 'a' :pushed
+2022-03-25 12:11:35.918 | DEBUG    | __main__:on_press:9 - 'b' :pushed
+2022-03-25 12:11:36.487 | DEBUG    | __main__:on_press:9 - 'c' :pushed
+2022-03-25 12:11:36.919 | DEBUG    | __main__:on_press:9 - 'd' :pushed
+2022-03-25 12:11:37.988 | DEBUG    | __main__:on_press:9 - 's' :pushed
+2022-03-25 12:11:51.108 | DEBUG    | __main__:on_press:9 - 'a' :pushed
+2022-03-25 12:11:53.055 | DEBUG    | __main__:on_press:9 - Key.backspace :pushed
