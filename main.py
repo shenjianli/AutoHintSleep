@@ -7,6 +7,8 @@ import cv2
 import pyperclip
 import pyautogui
 
+from notify.WeChatNotification import WeChatPub
+
 
 def paste_content(name):
     pyperclip.copy(name)
@@ -206,17 +208,23 @@ def refresh_page():
     print("刷新成功")
 
 
+def notify_sign_out():
+    wechat = WeChatPub()
+    wechat.send_hint("今日已执行签退")
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     time.sleep(3)
     # refresh_page()
-    open_app('WeChat')
-    scroll_top()
+    # open_app('WeChat')
+    # scroll_top()
     # notify_to_wechat('ok')
     # scroll_top()
     # start_outlook()
-    close_app("WeChat")
+    # close_app("WeChat")
+
+    notify_sign_out()
     # start_power_on()
     # start_safari()
     # start_wechat()

@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+import os
 from os.path import exists
 from time import sleep
 from PIL import ImageGrab
@@ -36,11 +38,26 @@ def record_screen(maxNum):
         print('创建屏幕，第{}张图片完成'.format(index))
 
 
+def delete_pics(pic_path):
+    if exists(pic_path):
+        files = os.listdir(pic_path)
+        for file in files:
+            file_data = pic_path + "/" + file
+            if os.path.isfile(file_data):
+                os.remove(file_data)
+            else:
+                delete_pics(file_data)
+
+
+def delete_cache():
+    delete_pics(pic_dir)
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    delete_cache()
     create_pic_dir()
     record_screen(5)
     captare_one_screen()
-
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

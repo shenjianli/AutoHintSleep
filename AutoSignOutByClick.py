@@ -19,6 +19,8 @@ import CaptureScreen
 # 第6个点为切换其他页面标签点      Point(x=122, y=90)
 
 # 是否要自行录入点击位置
+from notify.WeChatNotification import WeChatPub
+
 is_input_point = False
 # 需要执行的点坐标
 points = []
@@ -26,9 +28,9 @@ points = []
 # 签退时间小时数 [18-23]
 SIGN_OUT_HOUR = 19
 # 签退时间分钟基数取值 [11-49]
-SIGN_OUT_MIN = 48
+SIGN_OUT_MIN = 50
 # 签退时间分钟随机数
-SING_OUT_RAN_MIN = 0 # random.randint(0, 10)
+SING_OUT_RAN_MIN = random.randint(0, 10)
 
 # 刷新小时时间
 currentHour = 0
@@ -82,15 +84,19 @@ def refresh_page():
         point = points[0]
         pyautogui.moveTo(point, duration=1)
         pyautogui.click(point)
-        time.sleep(2)
+        time.sleep(1)
 
         point = points[1]
         pyautogui.moveTo(point, duration=1)
         pyautogui.click(point)
-        time.sleep(3)
+        time.sleep(1)
 
         # 操作结果屏幕截图
         CaptureScreen.captare_one_screen()
+
+        point = points[5]
+        pyautogui.moveTo(point, duration=1)
+        pyautogui.click(point)
         print("刷新成功")
 
 
@@ -127,22 +133,29 @@ def start_run():
         current_min = localtime.tm_min
         print("当前时间", localtime)
         if 0 <= weekDay <= 6:
+            print("签退时间：", str(SIGN_OUT_HOUR) + ":" + str(SIGN_OUT_MIN + SING_OUT_RAN_MIN))
             if hour == SIGN_OUT_HOUR:
                 print("is run", is_run)
                 if current_min == (SIGN_OUT_MIN + SING_OUT_RAN_MIN) and is_run == 0:
+                    # 企业微信通知
+                    start_sign_out()
+                    time.sleep(1)
                     open_app('Safari')
                     print("打开 Safari 成功")
-                    time.sleep(1)
-                    refresh_page()
+                    # time.sleep(1)
+                    # refresh_page()
+                    time.sleep(SING_OUT_RAN_MIN)
                     scroll_top()
                     # 执行签退点集
                     auto_start_run()
-                    time.sleep(2)
+                    # time.sleep(2)
                     # 微信通知
-                    notify_to_wechat("ok")
-                    time.sleep(2)
-                    open_app('Safari')
-                    time.sleep(10)
+                    # notify_to_wechat("ok")
+                    # time.sleep(2)
+                    # open_app('Safari')
+                    time.sleep(1)
+                    # 企业微信通知
+                    notify_sign_out()
                     SING_OUT_RAN_MIN = random.randint(0, 10)
                     print("产生的随机数", SING_OUT_RAN_MIN)
                     auto_shut_down()
@@ -161,16 +174,26 @@ def start_run():
                 print("非需要小时\n")
                 time.sleep(60 * 10)
                 # 日常工作点不需要刷新
-                if hour > 19 or hour < 10:
-                    if currentHour != hour:
+                if hour > 10 or hour < 20:
+                    if currentHour != hour and hour % 2 == 0:
+                        open_app('Safari')
+                        print("打开 Safari 成功")
+                        time.sleep(1)
                         refresh_page()
                         currentHour = hour
-                    elif hour == 4:
-                        refresh_page()
-                        time.sleep(60 * 10)
         else:
             print("非工作日，不进行执行\n")
             time.sleep(60 * 60 * 4)
+
+
+def notify_sign_out():
+    wechat = WeChatPub()
+    wechat.send_hint("签退执行完成")
+
+
+def start_sign_out():
+    wechat = WeChatPub()
+    wechat.send_hint("开始签退操作")
 
 
 # 可以正常运行
@@ -234,6 +257,10 @@ def scroll_top():
 
 # 主函数
 if __name__ == '__main__':
+    CaptureScreen.delete_cache()
+    print("清空上次操作图片数据")
+    # SIGN_OUT_HOUR = input("输入时间小时：[18-22]")
+    # SIGN_OUT_MIN = input("输入时间分钟：[11-49]")
     sumMin = SIGN_OUT_MIN + SING_OUT_RAN_MIN
     print("签退时间：", str(SIGN_OUT_HOUR) + ":" + str(sumMin))
     # 不用录入点签退，自动执行
